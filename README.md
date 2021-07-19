@@ -12,7 +12,7 @@ TNQMetro requires [NumPy](https://github.com/numpy/numpy) and [ncon](https://git
 
 ## Installation
 
-`pip install tnqmetro`
+`pip install -U tnqmetro`
 
 ## Example of usage
 

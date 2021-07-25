@@ -5180,7 +5180,7 @@ def Kraus_to_superoperator(kraus_list):
     return so
 
 
-def fullHilb(N, BC, so_before_list, h, so_after_list, imprecision=10**-2):
+def fullHilb(N, so_before_list, h, so_after_list, BC='O', imprecision=10**-2):
     """
     Optimization of the QFI over operator L (in full Hilbert space) and wave function psi0 (in full Hilbert space).
     
@@ -5193,8 +5193,6 @@ def fullHilb(N, BC, so_before_list, h, so_after_list, imprecision=10**-2):
     Parameters:
       N: integer
         Number of sites in the chain of tensors (usually number of particles).
-      BC: 'O' or 'P'
-        Boundary conditions, 'O' for OBC, 'P' for PBC.
       so_before_list: list of ndarrays of a shape (d**(2*k),d**(2*k)) where k describes on how many sites particular local superoperator acts
         List of local superoperators (in order) which act before unitary parameter encoding.
       h: ndarray of a shape (d,d)
@@ -5202,6 +5200,8 @@ def fullHilb(N, BC, so_before_list, h, so_after_list, imprecision=10**-2):
         Generator h have to be diagonal in computational basis, or in other words it is assumed that local superoperators are expressed in the eigenbasis of h.
       so_after_list: list of ndarrays of a shape (d**(2*k),d**(2*k)) where k describes on how many sites particular local superoperator acts
         List of local superoperators (in order) which act after unitary parameter encoding.
+      BC: 'O' or 'P'
+        Boundary conditions, 'O' for OBC, 'P' for PBC.
       imprecision: float, optional
         Expected relative imprecision of the end results.
     

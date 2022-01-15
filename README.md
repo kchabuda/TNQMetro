@@ -2,7 +2,7 @@
 
 TNQMetro is a numerical package written in Python 3 for calculations of fundamental quantum bounds on measurement precision. Thanks to the usage of the tensor-network formalism it can beat the curse of dimensionality and provides an efficient framework to calculate bounds for finite size system as well as determine the asymptotic scaling of precision in systems where quantum enhancement amounts to a constant factor improvement over the Standard Quantum Limit. It is written in a user-friendly way so that the basic functions do not require any knowledge of tensor networks.
 
-Introduction to the package alongside simple examples can be found in the paper [arXiv:2107.07644](https://arxiv.org/abs/2107.07644).  
+Introduction to the package alongside simple examples can be found in the paper [Computer Physics Communications **274**, 108282 (2022)](https://doi.org/10.1016/j.cpc.2021.108282).  
 Documentation to the package can be found on the [GitHub wiki](https://github.com/kchabuda/TNQMetro/wiki).  
 In-depth explanation of the tensor-network based approach to calculations of fundamental quantum bounds on measurement precision can be found in the paper [Nature Communications **11**, 250 (2020)](https://doi.org/10.1038/s41467-019-13735-9).
 
